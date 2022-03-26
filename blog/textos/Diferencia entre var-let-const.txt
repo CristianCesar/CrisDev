@@ -1,0 +1,77 @@
+Para vos que tajai dando tus primeros pasitos en JavaScript, 
+y de repente te encuentras con tres tipos de manera diferente
+de declarar variables y dices, pero queee?, que lo quee??.
+Tranquilo, a no desesperar, ya que al principio si puede ser
+un poco confuso, pero es más bien simple, una vez que sepas
+la diferencia entre ellas. Así que no te desesperes.
+
+Entonces, ¿Cuáles son las diferencias entre var, let y const?
+
+Aunque para entender un poco, primero deberemos saber
+
+¿Qué es ES5 y ES6? 🧐
+
+¡Esas son versiones de Javascript!
+
+ES6 significa ECMAScript 2015 y ECMAScript es un estándar de Javascript.
+Cuando llegó ES6, trajo consigo una gran cantidad de nuevas
+funcionalidades para Javascript como funciones de flecha, nuevas
+variables, desestructuración, etc. Es una gran mejora y si estas
+aprendiendo Javascript ahora, te recomiendo encarecidamente que
+aprendas ES6.
+
+En Javascript ES5, var era el rey. Se usó para todo. Pero con la nueva
+sintaxis de Javascript ES6, se introdujeron dos nuevas variables:
+const y let.
+
+Pero... ¿Cuál es la diferencia entre estas 3 variables y cuándo
+debería usarlas? 🤔
+
+Básicamente se trata de 3 cosas: alcance, declaraciones / actualizaciones
+y elevación.
+
+VAR
+👉 Tiene un alcance global o de función. Eso significa que si declaras
+una variable fuera del bloque, var se considerará una variable global
+y funcionará en todas partes. Si declaras var dentro de un bloque
+(un bloque es todo lo que escribes entre llaves), funcionará solo
+dentro de ese bloque. Si declaras la variable dentro de la función,
+aún puedes usarla dentro del bloque.
+👉 Puede volver a declararse y actualizarse dentro de su alcance.
+👉 Se elevan a la parte superior de su alcance y se inicializan con un
+valor de indefinido.
+
+LET
+👉 Tiene alcance de bloque. Entonces, si intentaS actualizar esa variable
+en algún lugar del bloque, globalmente o en la función, por ejemplo,
+devolverá undefined.
+👉 ¡Let se puede actualizar, pero no volver a declarar! Si intentaS volver
+a declararlo, Javascript arrojará un error.
+👉 También se levantan desde la parte superior, pero no se inicializan.
+Si intentaS usarlo antes de la declaración, obtendrá un error de
+referencia.
+
+Lo mejor de esto es que, dado que solo permite trabajar dentro de su
+alcance, no necesitas preocuparte si se ha utilizado antes y si
+accidentalmente lo actualizas en otro lugar.
+
+Un gran ejemplo es cuando necesitas una variable que contenga una
+matriz vacía o una variable inicializada en cero.
+
+CONST
+Este bloque tiene alcance.
+👉 No se puede actualizar ni volver a declarar. También se iza en la parte
+superior, pero no se declara. Debe inicializarse durante la declaración.
+Const es una gran opción cuando no necesitas volver a declararlo o
+actualizarlo, convirtiéndose en la mejor opción para sustituir var.
+
+Entonces, ¿qué variable elegir? 🤓
+
+Si estas codificando con la sintaxis ES6, intenta usar el solo const y let.
+Se considera la mejor práctica ya que no causará los problemas que
+causaría var.
+
+Y luego, decide si debes actualizar la variable o no.
+¿Necesitarás actualizarla? Entonces deberías usar let.
+Si no necesitas actualizarla, elije const. Ambos se levantan
+por la parte superior y funcionan solo dentro de un alcance.

@@ -1,0 +1,55 @@
+.main-skills{
+    width: 100%;
+    &__box{
+        width: 100%;
+        margin: 30px 0;
+        padding: 10px;
+    }
+    &__figure{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+    &__img{
+        width: 100%;
+        filter: grayscale(50%);
+        border-radius: 30%;
+        box-shadow: 0px 0px 7px 7px $primary;
+    }
+    &__title{
+        font-size: 3rem;
+        color: $complementary;
+    }
+    &__subtitle{
+        color: $secondary;
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+    &__texto{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+// Pantalla < 950px
+@media screen and (min-width: 950px){
+    .main-skills{
+        display: flex;
+        justify-content: center;
+        &__box{
+            width: 50%;
+        }
+        &__figure{
+            width: 35%;
+            overflow: visible;
+        }
+        &__title{
+            font-size: 4.5rem;
+        }
+        &__subtitle{
+            font-size: 2.8rem;
+        }
+        &__texto{
+            font-size: 1.4rem;
+        }
+    } 
+}

@@ -1,0 +1,63 @@
+.main-banner{
+    width: 100%;
+    &__box{
+        width: 100%;
+        :first-child{
+            color: $secondary;
+        }
+    }
+    &__title{
+        font-size: 4.3rem;
+        margin: 10px 0;
+        padding: 0;
+    }
+    &__texto{
+        font-size: 1.5rem;
+        color: $secondary;
+    }
+    &__figure{
+        width: 320px;
+        margin: 15px auto;
+        margin-top: 80px;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__btn{
+        padding: 15px 25px;
+        border-radius: 40px;
+        text-decoration: none;
+        background-color: $bkg-color;
+        box-shadow: 3px 3px 5px #000, -3px -3px 5px #32363d;
+        margin-right: 20px;
+        color: $complementary;
+        position: relative;
+        top: 40px;
+        transition: all .7s;
+        &:hover{
+            box-shadow: inset 0px -4px 4px #32363d, inset 0px 4px 4px #000;
+        }
+        &:hover > i{
+            position: relative;
+            left: 8px;
+            transition: all .7s;
+        }
+    }
+}
+// Pantalla < 950px
+@media screen and (min-width: 950px){
+    .main-banner{
+        display: flex;
+        &__box{
+            width: 50%;
+        }
+        &__figure{
+            width: 560px;
+        }
+        &__title{
+            font-size: 9rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

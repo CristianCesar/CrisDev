@@ -1,0 +1,39 @@
+.main-blog{
+    width: 100%;
+    margin-bottom: 80px;
+    padding: 10px;
+    &__title{
+        color: $complementary;
+        font-size: 3.5rem;
+        margin: 20px 0;
+    }
+    &__box{
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    &__figure, &__img{
+        width: 100%;
+    }
+    &__subtitle{
+        color: $secondary;
+        text-align: justify;
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+    &__texto{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 950px){
+    .main-blog{
+        &__container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__box{
+            width: 30%;
+        }
+    }
+}
